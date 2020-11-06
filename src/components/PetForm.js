@@ -40,8 +40,8 @@ export default class PetForm extends Component {
         <br/>
         <label>
           Emotion:
-          <select name="emotion" value={emotion} onChange={onChange}>
-            <option value="" disabled selected>Select your emotion</option>
+          <select name="emotion" value={ emotion } onChange={ onChange } >
+            <option value="" disabled >Select your emotion</option>
             <option value="Sad">Sad</option>
             <option value="Happy">Happy</option>
             <option value="Neutral">Neutral</option>

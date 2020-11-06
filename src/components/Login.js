@@ -17,7 +17,6 @@ export default class Login extends Component {
     this.setState({username: ""})
   }
 
-
   render(){
     return (
       <>
