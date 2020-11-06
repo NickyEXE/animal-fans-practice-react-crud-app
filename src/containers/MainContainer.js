@@ -20,21 +20,28 @@ export default class MainContainer extends Component {
         url: "https://images.dog.ceo/breeds/bulldog-french/n02108915_571.jpg",
         id: 2,
         emotion: "Alert",
-        username: "Marsha",
+        username: "Alice",
       },
       {
         caption: "I see wut u did ther",
         url: "https://images.dog.ceo/breeds/cotondetulear/IMAG1063.jpg",
         id: 3,
         emotion: "Alert",
-        username: "Greg"
+        username: "Xenomorph from Alien"
       },
+      {
+        caption: "Don't talk to me or my son ever again",
+        url: "https://images.dog.ceo/breeds/whippet/n02091134_12732.jpg",
+        emotion: "Alert",
+        id: 4,
+        username: "Marsha",
+      }
     ]
   }
 
   addPet = (pet) => {
     const {username, pets} = this.state
-    let newPet = {...pet, id: uuidv4(), user: username}
+    let newPet = {...pet, id: uuidv4(), username: username}
     this.setState({pets: [...pets, newPet]})
   }
 
